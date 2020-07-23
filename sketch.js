@@ -127,6 +127,7 @@ function draw() {
   spring.display();
   ground.display();
   groundHovering.display();
+}
 function mouseDragged(){
   Matter.Body.setPosition(ball.body,{x:mouseX,y:mouseY});
 }
@@ -140,5 +141,4 @@ function keyPressed(){
     spring.attach(ball.body);
   }
 
-}
 }
